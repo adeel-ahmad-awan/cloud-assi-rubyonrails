@@ -1,0 +1,13 @@
+<h1>welcome to party mr/mrs/ms</h1>
+<h1>first name    <%= @post.firstname %></h1>
+<p>last name      <%= @post.lastname %></p>
+<p>phone number   <%= @post.phonenum %></p>
+<p>email          <%= @post.email %></p>
+<p>your address   <%= @post.address %></p>
+<p>rsvp           <%= @post.rsvp %></p>
+<p>comments       <%= @post.comments %></p>
+<br>
+
+<%= link_to "edit data" , edit_list_path(@post) %>
+
+<%= link_to "delete" , list_path(@post), methord: :delete, data: {confirm: "you sure about that mate?" } %>
